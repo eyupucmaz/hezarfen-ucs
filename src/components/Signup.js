@@ -1,24 +1,9 @@
 import React, { Component } from "react";
-import { Container, Image, Form, Button, NavLink } from "react-bootstrap";
+import { Container, Image, Form, Button } from "react-bootstrap";
 import "./Login.css";
 import fire from "../firebase";
-import { Link } from "react-router-dom";
 
-class Login extends Component {
-	login() {
-		const email = document.querySelector("#email").value;
-		const password = document.querySelector("#password").value;
-
-		fire
-			.auth()
-			.signInWithEmailAndPassword(email, password)
-			.then((u) => {
-				console.log("You are inn");
-			})
-			.catch((err) => {
-				console.log("Error:" + err.toString());
-			});
-	}
+class Signup extends Component {
 	signUp() {
 		const email = document.querySelector("#email").value;
 		const password = document.querySelector("#password").value;
@@ -46,7 +31,7 @@ class Login extends Component {
 						className="logo img-fluid"
 						src={require("../image/logo-text.svg")}
 					/>
-					<h1 className="login-text text-white mt-3 mb-3">Giriş Yap</h1>
+					<h1 className="login-text text-white mt-3 mb-3">Kayıt Ol</h1>
 					{/* LOGIN FORM */}
 					<Form className="w-100">
 						<Form.Group className="mt-5">
@@ -66,27 +51,13 @@ class Login extends Component {
 							variant="primary"
 							onClick={this.login}
 						>
-							Giriş Yap
+							Kayıt Ol
 						</Button>
 					</Form>
-					<div className="login-footer">
-						<NavLink className="forget-password float-left p-0" href="#">
-							Parolami Unutum
-						</NavLink>
-						<Link to="/signup">
-							<NavLink
-								onClick={this.signUp}
-								className="signup float-right p-0"
-								href="#"
-							>
-								Kayıt Ol
-							</NavLink>
-						</Link>
-					</div>
 				</div>
 			</Container>
 		);
 	}
 }
 
-export { Login };
+export { Signup };

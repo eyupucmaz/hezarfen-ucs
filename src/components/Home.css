@@ -1,0 +1,23 @@
+.container-home {
+	background: linear-gradient(180deg, #0275d8 0%, #cdcdcd 100%);
+}
+.home-buttons {
+	padding: 4em;
+	background-color: #010101;
+	box-shadow: 14px -7px 15px rgba(0, 0, 0, 0.4);
+	border-radius: 54px;
+}
+
+.home-text {
+	margin-top: 1em;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 3.5em;
+}
+.buttons {
+	margin-top: 5em;
+	width: 80%;
+}
+.buttons button {
+	font-size: 1.8em;
+}

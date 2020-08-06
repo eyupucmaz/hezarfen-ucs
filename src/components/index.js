@@ -1,3 +1,3 @@
-export * from "./SideBar";
-export * from "./MainBar";
 export * from "./Login";
+export * from "./Home";
+export * from "./Signup";
