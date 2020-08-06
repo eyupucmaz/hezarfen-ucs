@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
-import Main from "./components/Main";
+// import { Container, Row } from "react-bootstrap";
+import { Login } from "./components";
+import { Container } from "react-bootstrap";
+
 export default class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				<Main />
-			</div>
+			<Container fluid className="p-0">
+				<Login />
+			</Container>
 		);
 	}
 }
