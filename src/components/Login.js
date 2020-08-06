@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Image, Form, Button } from "react-bootstrap";
+import { Container, Image, Form, Button, NavLink } from "react-bootstrap";
 import "./Login.css";
 
 class Login extends Component {
@@ -34,7 +34,9 @@ class Login extends Component {
 							Giriş Yap
 						</Button>
 					</Form>
-					<div className="w-100 mt-5">hels;ldak</div>
+					<div className="w-100 mt-5">
+						<NavLink href="#">Parolami Unutum</NavLink>
+					</div>
 				</div>
 			</Container>
 		);
