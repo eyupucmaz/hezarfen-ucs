@@ -7,7 +7,7 @@ class Login extends Component {
 		return (
 			<Container
 				fluid
-				className="container-login d-flex justify-content-center align-items-center vh-100 vw-auto"
+				className="container-login d-flex justify-content-center align-items-center vh-100 vw-100"
 			>
 				<div className="login-form d-flex flex-column justify-content-center align-items-center">
 					{/* LOGO END TEXT */}
@@ -34,8 +34,13 @@ class Login extends Component {
 							Giriş Yap
 						</Button>
 					</Form>
-					<div className="w-100 mt-5">
-						<NavLink href="#">Parolami Unutum</NavLink>
+					<div className="login-footer">
+						<NavLink className="forget-password float-left p-0" href="#">
+							Parolami Unutum
+						</NavLink>
+						<NavLink className="signup float-right p-0" href="#">
+							Kayıt Ol
+						</NavLink>
 					</div>
 				</div>
 			</Container>

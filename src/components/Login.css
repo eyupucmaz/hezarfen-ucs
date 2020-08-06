@@ -16,3 +16,16 @@
 .login-button {
 	font-size: 2em;
 }
+.forget-password,
+.signup {
+	color: #ffffff;
+}
+.forget-password:hover,
+.signup:hover {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.login-footer {
+	width: 100%;
+	margin-top: 6em;
+}
