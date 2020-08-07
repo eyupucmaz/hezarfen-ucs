@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Image, Form, Button } from "react-bootstrap";
-import "./Login.css";
+import "./Signup.css";
 import fire from "../firebase";
 
 class Signup extends Component {

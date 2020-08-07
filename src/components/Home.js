@@ -30,7 +30,7 @@ class Home extends Component {
 							</Button>
 						</Link>
 						<Link to="/signup">
-							<Button className="mt-4" variant="primary" block>
+							<Button to="/signup" className="mt-4" variant="primary" block>
 								Kayıt Ol
 							</Button>
 						</Link>
