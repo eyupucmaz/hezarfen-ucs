@@ -1,6 +1,4 @@
-## Visit the project
-
-[https://elastic-noether-fdbe68.netlify.app/](Project PAge)
+## Visit the project: [Hezarfen UCS](https://elastic-noether-fdbe68.netlify.app/)
 
 ## Available Scripts
 
