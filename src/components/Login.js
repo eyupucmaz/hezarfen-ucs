@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Container, Image, Form, Button, Alert } from "react-bootstrap";
+import React from "react";
+import { Container, Image, Form, Button } from "react-bootstrap";
 import "./Login.css";
 import fire from "../firebase";
 import { Link } from "react-router-dom";
 import alertify from "alertifyjs";
 
 const Login = () => {
-	const [isLogin, setIsLogin] = useState();
+	// const [isLogin, setIsLogin] = useState();
 
 	const login = (e) => {
 		const email = document.querySelector("#email").value;
@@ -16,7 +16,7 @@ const Login = () => {
 			.auth()
 			.signInWithEmailAndPassword(email, password)
 			.then((u) => {
-				setIsLogin(true);
+				// setIsLogin(true);
 				alertify.set("notifier", "position", "top-center");
 				alertify.success("Giris Yaptiniz", 4);
 			})

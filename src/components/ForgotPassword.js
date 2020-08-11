@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Image, Form, Button } from "react-bootstrap";
 import alertify from "alertifyjs";
 
@@ -6,7 +6,7 @@ import fire from "../firebase";
 import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
-	const [isSend, setIsSend] = useState(null);
+	// const [isSend, setIsSend] = useState(null);
 
 	const forgotPassword = (e) => {
 		const email = document.querySelector("#email").value;
@@ -14,7 +14,7 @@ const ForgotPassword = () => {
 			.auth()
 			.sendPasswordResetEmail(email)
 			.then((u) => {
-				setIsSend(true);
+				// setIsSend(true);
 				alertify.set("notifier", "position", "top-center");
 				alertify.success("Mail Gonderildi", 4);
 			})
