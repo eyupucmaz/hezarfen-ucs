@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import { Container, Image, Form, Button } from "react-bootstrap";
 import "./Signup.css";
 import fire from "../firebase";
+import { Link } from "react-router-dom";
 
 class Signup extends Component {
-	signUp() {
+	signUp(e) {
 		const email = document.querySelector("#email").value;
 		const password = document.querySelector("#password").value;
-
+		const passwordTwo = document.querySelector("#password-2").value;
+		password === passwordTwo ? console.log("equal") : console.log("not equal");
 		fire
 			.auth()
 			.createUserWithEmailAndPassword(email, password)
@@ -15,8 +17,9 @@ class Signup extends Component {
 				console.log("You are inn");
 			})
 			.catch((err) => {
-				console.log("Error:" + err.toString());
+				console.log(err.toString());
 			});
+		// e.preventDefault();
 	}
 
 	render() {
@@ -27,17 +30,25 @@ class Signup extends Component {
 			>
 				<div className="login-form d-flex flex-column justify-content-center align-items-center">
 					{/* LOGO END TEXT */}
-					<Image
-						className="logo img-fluid"
-						src={require("../image/logo-text.svg")}
-					/>
+					<Link to="/">
+						<Image
+							className="logo img-fluid"
+							src={require("../image/logo-text.svg")}
+						/>
+					</Link>
 					<h1 className="login-text text-white mt-3 mb-3">Kayıt Ol</h1>
 					{/* LOGIN FORM */}
-					<Form className="w-100">
+					<Form className="w-100" onSubmit={this.signUp}>
+						{/* email */}
 						<Form.Group className="mt-5">
-							<Form.Control id="email" type="email" placeholder="E-mail" />
+							<Form.Control
+								id="email"
+								type="email"
+								placeholder="E-mail"
+								required
+							/>
 						</Form.Group>
-
+						{/* password */}
 						<Form.Group className="mt-4">
 							<Form.Control
 								id="password"
@@ -45,11 +56,37 @@ class Signup extends Component {
 								placeholder="Parola"
 							/>
 						</Form.Group>
-
+						{/* password check */}
+						<Form.Group className="mt-4">
+							<Form.Control
+								id="password-2"
+								type="password"
+								placeholder="Parola"
+							/>
+						</Form.Group>
+						{/* security code */}
+						<Form.Group>
+							<Form.Control type="number" placeholder="Guvenlik Kodu" />
+						</Form.Group>
+						{/* department */}
+						<Form.Group controlId="exampleForm.ControlSelect2">
+							<Form.Control as="select" placeholder="Birim Seciniz">
+								<option>Birim Seciniz...</option>
+								<option>Yonetim</option>
+								<option>Kimya</option>
+								<option>Makine</option>
+								<option>EDYB</option>
+								<option>Omega</option>
+								<option>Tasarim</option>
+								<option>IRSRC</option>
+								<option>Dil</option>
+							</Form.Control>
+						</Form.Group>
 						<Button
+							type="submit"
 							className="w-100 mt-4 login-button"
 							variant="primary"
-							onClick={this.login}
+							onClick={this.signUp}
 						>
 							Kayıt Ol
 						</Button>
