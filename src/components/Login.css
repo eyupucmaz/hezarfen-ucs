@@ -16,11 +16,11 @@
 .login-button {
 	font-size: 2em;
 }
-.forget-password,
+.forgot-password,
 .signup {
 	color: #ffffff;
 }
-.forget-password:hover,
+.forgot-password:hover,
 .signup:hover {
 	color: rgba(255, 255, 255, 0.5);
 }
