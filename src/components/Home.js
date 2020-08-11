@@ -12,10 +12,12 @@ class Home extends Component {
 			>
 				<div className="home-buttons d-flex flex-column justify-content-center align-items-center">
 					{/* LOGO END TEXT */}
-					<Image
-						className="logo img-fluid"
-						src={require("../image/logo-text.svg")}
-					/>
+					<Link to="/">
+						<Image
+							className="logo img-fluid"
+							src={require("../image/logo-text.svg")}
+						/>
+					</Link>
 					<h1 className="home-text text-center text-wrap">
 						Merhaba Dunyali
 						<span role="img" aria-label="alien">
