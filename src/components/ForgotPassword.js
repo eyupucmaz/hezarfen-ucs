@@ -10,15 +10,6 @@ const ForgotPassword = () => {
 
 	const forgotPassword = (e) => {
 		const email = document.querySelector("#email").value;
-		// fire
-		// 	.auth()
-		// 	.signInWithEmailAndPassword(email, password)
-		// 	.then((u) => {
-		// 		console.log("You are inn");
-		// 	})
-		// 	.catch((err) => {
-		// 		console.log("Error:" + err.toString());
-		// 	});
 		fire
 			.auth()
 			.sendPasswordResetEmail(email)
