@@ -67,11 +67,11 @@ class Signup extends Component {
 						</Form.Group>
 						{/* security code */}
 						<Form.Group>
-							<Form.Control type="number" placeholder="Guvenlik Kodu" />
+							<Form.Control type="number" placeholder="Güvenlik Kodu" />
 						</Form.Group>
 						{/* department */}
 						<Form.Group controlId="exampleForm.ControlSelect2">
-							<Form.Control as="select" placeholder="Birim Seciniz">
+							<Form.Control as="select" placeholder="Birim Seçiniz">
 								<option>Birim Seçiniz...</option>
 								<option>Yönetim</option>
 								<option>Kimya</option>
