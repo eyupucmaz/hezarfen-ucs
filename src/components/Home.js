@@ -20,7 +20,7 @@ class Home extends Component {
 						/>
 					</Link>
 					<h1 className="home-text text-center text-wrap">
-						Merhaba Dunyali
+						Hello World
 						<span role="img" aria-label="alien">
 							👽
 						</span>

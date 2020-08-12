@@ -73,7 +73,7 @@ const Login = () => {
 
 				<div className="login-footer">
 					<Link to="/forgot-password">
-						<p className="forgot-password float-left p-0">Parolami Unutum</p>
+						<p className="forgot-password float-left p-0">Parolamı Unutum</p>
 					</Link>
 					<Link to="/signup">
 						<p className="signup float-right p-0">Kayıt Ol</p>

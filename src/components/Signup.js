@@ -72,13 +72,13 @@ class Signup extends Component {
 						{/* department */}
 						<Form.Group controlId="exampleForm.ControlSelect2">
 							<Form.Control as="select" placeholder="Birim Seciniz">
-								<option>Birim Seciniz...</option>
-								<option>Yonetim</option>
+								<option>Birim Seçiniz...</option>
+								<option>Yönetim</option>
 								<option>Kimya</option>
 								<option>Makine</option>
 								<option>EDYB</option>
 								<option>Omega</option>
-								<option>Tasarim</option>
+								<option>Tasarım</option>
 								<option>IRSRC</option>
 								<option>Dil</option>
 							</Form.Control>

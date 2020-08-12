@@ -40,7 +40,7 @@ const ForgotPassword = () => {
 					/>
 				</Link>
 				<h1 className="login-text  text-white mt-3 mb-3 text-center">
-					Parolami Unuttum
+					Parolamı Unuttum
 				</h1>
 				{/* LOGIN FORM */}
 
