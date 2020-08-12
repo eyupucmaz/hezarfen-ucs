@@ -16,6 +16,7 @@ class Home extends Component {
 						<Image
 							className="logo img-fluid"
 							src={require("../image/logo-text.svg")}
+							alt="Hezarfen Space Logo"
 						/>
 					</Link>
 					<h1 className="home-text text-center text-wrap">

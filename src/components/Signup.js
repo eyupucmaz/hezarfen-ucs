@@ -34,6 +34,7 @@ class Signup extends Component {
 						<Image
 							className="logo img-fluid"
 							src={require("../image/logo-text.svg")}
+							alt="Hezarfen Space Logo"
 						/>
 					</Link>
 					<h1 className="login-text text-white mt-3 mb-3">Kayıt Ol</h1>

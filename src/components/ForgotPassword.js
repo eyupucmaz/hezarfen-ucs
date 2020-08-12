@@ -36,6 +36,7 @@ const ForgotPassword = () => {
 					<Image
 						className="logo img-fluid"
 						src={require("../image/logo-text.svg")}
+						alt="Hezarfen Space Logo"
 					/>
 				</Link>
 				<h1 className="login-text  text-white mt-3 mb-3 text-center">
